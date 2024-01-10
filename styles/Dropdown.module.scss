@@ -1,0 +1,12 @@
+.navItem {
+	font-size: 16px;
+	padding: 10px 18px;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+
+	&:hover {
+		color: #646cff !important;
+	}
+}

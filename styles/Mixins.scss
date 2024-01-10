@@ -1,0 +1,92 @@
+@mixin container {
+	padding: 0px 4rem;
+
+	@media only screen and (max-width: 1024px) {
+		padding: 0px 2rem;
+	}
+
+	@media only screen and (max-width: 768px) {
+		padding: 0 10px;
+	}
+}
+
+@mixin card {
+	border-radius: 14px;
+	padding: 18px 42px;
+	border: 1px solid;
+	border-color: rgba(139, 139, 149, 0.2);
+
+	@media only screen and (max-width: 1300px) {
+		padding: 20px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		padding: 10px;
+	}
+
+	@media only screen and (max-width: 330px) {
+		padding: 8px;
+	}
+}
+
+@mixin button {
+	background-color: #fafafa;
+	border: 1px solid #d0d7de;
+	border-radius: 10px;
+	cursor: pointer;
+	display: block;
+	font-weight: 500;
+	font-size: 15px;
+	letter-spacing: -0.025em;
+	line-height: 1.45;
+	min-width: 25px;
+	overflow: visible;
+	padding: 6px 20px;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	transition: 0.3s !important;
+
+	&:disabled {
+		cursor: default;
+		opacity: 0.3;
+	}
+
+	&:hover {
+		border-color: #848187;
+		text-decoration: none;
+		color: inherit !important;
+	}
+
+	&:focus {
+		box-shadow: #622c8615 0 0 0 2px;
+		outline: none;
+	}
+
+	@media (max-width: 1600px) {
+		padding: 5px 18px;
+	}
+	@media (max-width: 1024px) {
+		font-size: 14px;
+	}
+	@media (max-width: 768px) {
+		font-size: 12px;
+		padding: 3px 7px;
+	}
+}
+
+@mixin button-primary {
+	@include button;
+	border: 1px solid #646cff;
+	background-color: #646cff;
+	color: #fbfbfb !important;
+	transition: 0.2s;
+
+	&:hover {
+		color: #fbfbfb !important;
+		background-color: #787fff;
+		border-color: #787fff;
+	}
+}
