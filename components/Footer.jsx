@@ -20,19 +20,19 @@ const Footer = props => {
 				<div className={styles.footer__logo}>
 					<Link href='/'>
 						<Image
-							src='/logo.svg'
+							src='/logo1.svg'
 							alt='logo'
-							width={220}
-							height={100}
+							width={55}
+							height={25}
 							className={styles.logo}
 							style={{ display: theme === 'light' ? 'block' : 'none' }}
 						/>
 
 						<Image
-							src='/darkLogo.svg'
+							src='/logo1.svg'
 							alt='logo'
-							width={220}
-							height={100}
+							width={55}
+							height={25}
 							className={styles.logo}
 							style={{ display: theme === 'dark' ? 'block' : 'none' }}
 						/>
@@ -47,9 +47,9 @@ const Footer = props => {
 							aria-hidden='true'
 							style={{ WebkitMask: "url('/icons/heart.svg') 50% 50% no-repeat" }}
 						/>{' '}
-						for the Web3 community.
+						from supporting by ITRocket team.
 					</span>
-					<span className='text-slate-600'>© ITRocket Team. All rights reserved</span>
+					<span className='text-slate-600'>© MeKong Labs. All rights reserved</span>
 				</div>
 				<div className='socials'>
 					<a href='https://linktr.ee/itrocket_team' target='_blank' rel='noopener noreferrer'>

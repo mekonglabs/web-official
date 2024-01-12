@@ -111,14 +111,14 @@ const Home = () => {
 	return (
 		<>
 			<Head>
-				<title>ITRocket - Trusted Validator &amp; Interchain Utility Provider!</title>
+				<title>Mekong Labs: Pioneering Blockchain Excellence &amp; Shaping Future Realities</title>
 				<meta
 					name='description'
-					content='ITRocket 🚀 - Crypto multipurpose project focused on providing best services for Cosmos (and not only) node operators'
+					content='MeKongLabs 🚀 - Trusted team specializing in blockchain validation and airdrop hunting.'
 				/>
 				<meta
 					name='keywords'
-					content='ITRocket, it rocket, validator, cosmos, cosmos installation, nodes, blockchain'
+					content='MeKongLabs, Mekong labs, validator, nodes, blockchain'
 				/>
 			</Head>
 			<Header />
@@ -142,12 +142,10 @@ const Home = () => {
 							<div className={styles.hero__column} id={styles.hero__descStaking}>
 								<div className={styles.hero__columnRoot}>
 									<h1 className='font-bold  mb-[15px] text-[26px] md:text-[38px] lg:text-[50px]'>
-										Trusted Validator &amp; Interchain Utility Provider
+										Pioneering Blockchain Excellence &amp; Shaping Future Realities
 									</h1>
 									<span className={styles.hero__desc}>
-										With few simple steps you can delegate funds to our trusted validators or explore our
-										services where you can find tools that will be useful for node operators and
-										developers.
+										By following a few straightforward steps, you can either delegate funds to our reliable validators or explore our range of services, offering essential tools beneficial for both node operators and developers.
 									</span>
 								</div>
 								<div className={styles.hero__links}>

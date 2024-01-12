@@ -115,20 +115,20 @@ const Header = () => {
 				{
 					<Link href='/'>
 						<Image
-							src='/logo.svg'
+							src='/logo1.svg'
 							alt='logo'
-							width={180}
-							height={55}
+							width={90}
+							height={25}
 							priority
 							className={styles.logo}
 							style={{ display: theme === 'light' ? 'block' : 'none' }}
 						/>
 
 						<Image
-							src='/darkLogo.svg'
+							src='/logo1.svg'
 							alt='logo'
-							width={180}
-							height={55}
+							width={90}
+							height={25}
 							priority
 							className={styles.logo}
 							style={{ display: theme === 'dark' ? 'block' : 'none' }}
