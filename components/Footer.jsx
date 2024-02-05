@@ -47,19 +47,19 @@ const Footer = props => {
 							aria-hidden='true'
 							style={{ WebkitMask: "url('/icons/heart.svg') 50% 50% no-repeat" }}
 						/>{' '}
-						from supporting by ITRocket team.
+						from Mekong Labs team.
 					</span>
 					<span className='text-slate-600'>© MeKong Labs. All rights reserved</span>
 				</div>
 				<div className='socials'>
-					<a href='https://linktr.ee/itrocket_team' target='_blank' rel='noopener noreferrer'>
+					<a href='https://t.me/+AdXdDTzcbgY4YThl' target='_blank' rel='noopener noreferrer'>
 						<Image src='/icons/tg.svg' alt='telegram' width={40} height={40} />
 					</a>
 
-					<a href='https://twitter.com/itrocket_team' target='_blank' rel='noopener noreferrer'>
+					<a href='https://twitter.com/mekonglabs' target='_blank' rel='noopener noreferrer'>
 						<Image src='/icons/twitter.svg' alt='twitter' width={40} height={40} />
 					</a>
-					<a href='https://github.com/itrocket-am' target='_blank' rel='noopener noreferrer'>
+					<a href='https://docs.mekonglabs.tech/' target='_blank' rel='noopener noreferrer'>
 						<Image
 							src='/icons/github.svg'
 							alt='github'
