@@ -61,7 +61,7 @@
       "updHeight": "9070000",
       "variable": "HAQQ",
       "website": "https://islamiccoin.net",
-      "evmRPC": "https://haqq-mainnet-evm.itrocket.net:443"
+      "evmRPC": "https://haqq-mainnet-evm.mekonglabs.tech:443"
     },
     "nym": {
       "chainID": "",
@@ -107,7 +107,7 @@
       "cardchain": "true",
       "desc": "On Crowd Control you can create and design your own trading cards. Your Cards become a part of the game for everyone.",
       "offValDoc": "https://github.com/DecentralCardGame/Testnet",
-      "delegate": "https://testnet.itrocket.net/cardchain/staking/ccvaloper1klsyj8ptejt4ufy86drxd8vm3vsas8hhjwhf9r"
+      "delegate": "https://mekonglabs.tech/cardchain/staking/ccvaloper1klsyj8ptejt4ufy86drxd8vm3vsas8hhjwhf9r"
     },
     "cascadia": {
       "bin": "cascadiad",
@@ -135,9 +135,9 @@
       "variable": "CASCADIA",
       "website": "https://www.cascadia.foundation",
       "offValDoc": "https://cascadia.gitbook.io/gitbook/network/configuration",
-      "delegate": "https://testnet.itrocket.net/cascadia/staking/cascadiavaloper1v2guhhn4v6gcjrp8wuy286fdpm6vfyyzqhausm",
+      "delegate": "https://mekonglabs.tech/cascadia/staking/cascadiavaloper1v2guhhn4v6gcjrp8wuy286fdpm6vfyyzqhausm",
       "stateSync": "true",
-      "evmRPC": "https://cascadia-testnet-jsonrpc.itrocket.net:443",
+      "evmRPC": "https://cascadia-testnet-jsonrpc.mekonglabs.tech:443",
       "newExecStart": "$(which cascadiad) start --chain-id cascadia_11029-1",
       "newInit": "cascadiad init $MONIKER --chain-id $CASCADIA_CHAIN_ID\n# Config consensus parameters\nsed -i -e \"s/^timeout_propose *=.*/timeout_propose = \\\"3s\\\"/\" $HOME/.cascadiad/config/config.toml\nsed -i -e \"s/^timeout_propose_delta *=.*/timeout_propose_delta = \\\"500ms\\\"/\" $HOME/.cascadiad/config/config.toml\nsed -i -e \"s/^timeout_prevote *=.*/timeout_prevote = \\\"1s\\\"/\" $HOME/.cascadiad/config/config.toml\nsed -i -e \"s/^timeout_prevote_delta *=.*/timeout_prevote_delta = \\\"500ms\\\"/\" $HOME/.cascadiad/config/config.toml\nsed -i -e \"s/^timeout_precommit *=.*/timeout_precommit = \\\"1s\\\"/\" $HOME/.cascadiad/config/config.toml\nsed -i -e \"s/^timeout_precommit_delta *=.*/timeout_precommit_delta = \\\"500ms\\\"/\" $HOME/.cascadiad/config/config.toml\nsed -i -e \"s/^timeout_commit *=.*/timeout_commit = \\\"3s\\\"/\" $HOME/.cascadiad/config/config.toml"
     },
@@ -170,7 +170,7 @@
       "newInit": "false",
       "desc": "Celestia is the first modular blockchain network. It is a modular consensus and data network, built to enable anyone to easily deploy their own blockchain with minimal overhead.",
       "fav": "true",
-      "delegate": "https://testnet.itrocket.net/celestia/staking/celestiavaloper1n94ezezjz99knnpla7a6p8xftnlr23zacsaxht"
+      "delegate": "https://mekonglabs.tech/celestia/staking/celestiavaloper1n94ezezjz99knnpla7a6p8xftnlr23zacsaxht"
     },
     "chainflip": {
       "ecosystem": "false",
@@ -210,7 +210,7 @@
       "updHeight": "275000",
       "variable": "DORA",
       "website": "",
-      "delegate": "https://testnet.itrocket.net/dora/staking/doravaloper16yazemxnx6kk9gcv9wpujk6e27v78ttsjraq0z",
+      "delegate": "https://mekonglabs.tech/dora/staking/doravaloper16yazemxnx6kk9gcv9wpujk6e27v78ttsjraq0z",
       "stateSync": "true"
     },
     "elys": {
@@ -241,7 +241,7 @@
       "updHeight": "5006688",
       "variable": "ELYS",
       "newExecStart": "$(which elysd) start --minimum-gas-prices=\"0.0018ibc/2180E84E20F5679FCC760D8C165B60F42065DEF7F46A72B447CFF1B7DC6C0A65,0.00025ibc/E2D2F6ADCC68AA3384B2F5DFACCA437923D137C14E86FB8A10207CF3BED0C8D4,0.00025uelys\" --home $HOME/.elys",
-      "delegate": "https://testnet.itrocket.net/elys/staking/elysvaloper1udyzuu9asrr4vhrut8yge887kakxvs7clvqs55"
+      "delegate": "https://mekonglabs.tech/elys/staking/elysvaloper1udyzuu9asrr4vhrut8yge887kakxvs7clvqs55"
     },
     "empower": {
       "ecosystem": "cosmos",
@@ -270,7 +270,7 @@
       "updHeight": "2790000",
       "variable": "EMPOWER",
       "stateSync": "true",
-      "delegate": "https://testnet.itrocket.net/empower/staking/empowervaloper1wz9qcvpyl852slxnzfkw7k3chnpstd009sxynj"
+      "delegate": "https://mekonglabs.tech/empower/staking/empowervaloper1wz9qcvpyl852slxnzfkw7k3chnpstd009sxynj"
     },
     "entangle": {
       "ecosystem": "cosmos",
@@ -296,7 +296,7 @@
       "snapMaxSize": "10",
       "updHeight": "",
       "variable": "ENTANGLE",
-      "delegate": "https://testnet.itrocket.net/entangle/staking/ethmvaloper1r99huekzqyl4a46mk4jkk3nrmqxulr49h80d38",
+      "delegate": "https://mekonglabs.tech/entangle/staking/ethmvaloper1r99huekzqyl4a46mk4jkk3nrmqxulr49h80d38",
       "newExecStart": "$(which entangled) start --pruning=nothing --evm.tracer=json --log_level info --minimum-gas-prices=0.0001aNGL --json-rpc.api eth,txpool,personal,net,debug,web3,miner --api.enable --api.enabled-unsafe-cors",
       "newInit": "# config app\nsed -i \\\n-e 's/timeout_broadcast_tx_commit = \"10s\"/timeout_broadcast_tx_commit = \"1s\"/g' \\\n-e 's/timeout_propose = \"3s\"/timeout_propose = \"1s\"/g' \\\n-e 's/timeout_propose_delta = \"500ms\"/timeout_propose_delta = \"200ms\"/g' \\\n-e 's/timeout_prevote = \"1s\"/timeout_prevote = \"500ms\"/g' \\\n-e 's/timeout_prevote_delta = \"500ms\"/timeout_prevote_delta = \"200ms\"/g' \\\n-e 's/timeout_precommit = \"1s\"/timeout_precommit = \"500ms\"/g' \\\n-e 's/timeout_precommit_delta = \"500ms\"/timeout_precommit_delta = \"200ms\"/g' \\\n-e 's/timeout_commit = \"5s\"/timeout_commit = \"1s\"/g' \\\n-e 's/create_empty_blocks = true/create_empty_blocks = false/g' \\\n-e 's/create_empty_blocks_interval = \"0s\"/create_empty_blocks_interval = \"30s\"/g' \\\n-e 's/namespace = \"cometbft\"/namespace = \"tendermint\"/g' \"$HOME/.entangled/config/config.toml\""
     },
@@ -324,14 +324,14 @@
       "snapMaxSize": "10",
       "updHeight": "680000",
       "variable": "ENTRY",
-      "delegate": "https://testnet.itrocket.net/entrypoint/staking/entrypointvaloper10wvgft5prg5nl9w46ahec74p866fyn73dlpflk",
+      "delegate": "https://mekonglabs.tech/entrypoint/staking/entrypointvaloper10wvgft5prg5nl9w46ahec74p866fyn73dlpflk",
       "newInstallBin": "cd $HOME\nwget -O entrypointd https://github.com/entrypoint-zone/testnets/releases/download/v1.3.0/entrypointd-1.3.0-linux-amd64\nchmod +x entrypointd\nsudo mv $HOME/entrypointd $(which entrypointd)"
     },
     "humans": {
       "bin": "humansd",
       "binHome": "/home/humans/go/bin/humansd",
       "chainID": "humans_3000-31",
-      "delegate": "https://testnet.itrocket.net/humans/staking/humanvaloper14acd299ds9q3qf09gjqw9qvvzwmla8g7nhhg8k",
+      "delegate": "https://mekonglabs.tech/humans/staking/humanvaloper14acd299ds9q3qf09gjqw9qvvzwmla8g7nhhg8k",
       "denom": "aheart",
       "ecosystem": "cosmos",
       "gas": "--gas auto --gas-adjustment 1.5",
@@ -356,7 +356,7 @@
       "offValDoc": "https://github.com/humansdotai/docs-humans/blob/master/run-nodes/testnet/joining-testnet.md",
       "fav": false,
       "desc": "We are creating a scalable blockchain providing the economy of the heart driven AI, placing the humans at the facefront of the AI evolution",
-      "evmRPC": "https://humans-testnet-evm.itrocket.net:443"
+      "evmRPC": "https://humans-testnet-evm.mekonglabs.tech:443"
     },
     "lava": {
       "ecosystem": "cosmos",
@@ -387,7 +387,7 @@
       "desc": "Lava pairs Providers with Applications for scalable, private and uncensored access to Web3.",
       "offValDoc": "https://docs.lavanet.xyz/testnet",
       "newInit": "lavad init $MONIKER --chain-id $LAVA_CHAIN_ID\nsed -i \\\n  -e 's/timeout_commit = \".*\"/timeout_commit = \"30s\"/g' \\\n  -e 's/timeout_propose = \".*\"/timeout_propose = \"1s\"/g' \\\n  -e 's/timeout_precommit = \".*\"/timeout_precommit = \"1s\"/g' \\\n  -e 's/timeout_precommit_delta = \".*\"/timeout_precommit_delta = \"500ms\"/g' \\\n  -e 's/timeout_prevote = \".*\"/timeout_prevote = \"1s\"/g' \\\n  -e 's/timeout_prevote_delta = \".*\"/timeout_prevote_delta = \"500ms\"/g' \\\n  -e 's/timeout_propose_delta = \".*\"/timeout_propose_delta = \"500ms\"/g' \\\n  -e 's/skip_timeout_commit = \".*\"/skip_timeout_commit = false/g' \\\n  $HOME/.lava/config/config.toml",
-      "delegate": "https://testnet.itrocket.net/lava/staking/lava@valoper1zkvxayayvvpyhe5cy204xcu6xaea6yv0uhz8lx"
+      "delegate": "https://mekonglabs.tech/lava/staking/lava@valoper1zkvxayayvvpyhe5cy204xcu6xaea6yv0uhz8lx"
     },
     "mantra": {
       "ecosystem": "cosmos",
@@ -402,7 +402,7 @@
       "chainID": "mantrachain-testnet-1",
       "denom": "uaum",
       "hardware": "4 Cores, 8GB RAM, 200GB of storage (NVME)",
-      "installBin": "cd $HOME\nsudo wget -O /usr/lib/libwasmvm.x86_64.so https://github.com/CosmWasm/wasmvm/releases/download/v1.3.0/libwasmvm.x86_64.so\nwget https://testnet-files.itrocket.net/mantra/mantrachaind-linux-amd64.zip\nunzip mantrachaind-linux-amd64.zip\nrm mantrachaind-linux-amd64.zip\nmv mantrachaind $HOME/go/bin",
+      "installBin": "cd $HOME\nsudo wget -O /usr/lib/libwasmvm.x86_64.so https://github.com/CosmWasm/wasmvm/releases/download/v1.3.0/libwasmvm.x86_64.so\nwget https://testnet-files.mekonglabs.tech/mantra/mantrachaind-linux-amd64.zip\nunzip mantrachaind-linux-amd64.zip\nrm mantrachaind-linux-amd64.zip\nmv mantrachaind $HOME/go/bin",
       "path": ".mantrachain",
       "peerID": "1a46b1db53d1ff3dbec56ec93269f6a0d15faeb4",
       "peerPort": "22656",
@@ -414,7 +414,7 @@
       "updHeight": "",
       "variable": "MANTRA",
       "newInstallBin": "",
-      "delegate": "https://testnet.itrocket.net/mantra/staking/mantravaloper1r6yj27sh3c982dh34qkw8yvrw2l5f0z9ypaf52"
+      "delegate": "https://mekonglabs.tech/mantra/staking/mantravaloper1r6yj27sh3c982dh34qkw8yvrw2l5f0z9ypaf52"
     },
     "namada": {
       "bin": "namada",
@@ -474,7 +474,7 @@
       "newInstallBin": "",
       "desc": "Brings random beacons to Cosmos blockchains without compromising security or usability by leveraging drand and IBC.",
       "offValDoc": "https://docs.nois.network/use-cases/for-validators",
-      "delegate": "https://testnet.itrocket.net/nois/staking/noisvaloper145mpz0qyfmgnv6vve44tmj3hl6x0y8umxkghln"
+      "delegate": "https://mekonglabs.tech/nois/staking/noisvaloper145mpz0qyfmgnv6vve44tmj3hl6x0y8umxkghln"
     },
     "ojo": {
       "ecosystem": "cosmos",
@@ -504,7 +504,7 @@
       "newInstallBin": "cd $HOME\nrm -rf ojo\ngit clone https://github.com/ojo-network/ojo.git\ncd ojo\ngit checkout  v0.3.0-rc4\nmake build\nsudo mv $HOME/ojo/build/ojod $(which ojod)",
       "desc": "Give your chain access to realtime, decentralized oracles, and stop worrying about your data.",
       "offValDoc": "https://docs.ojo.network/sauron-testnet/joining-as-a-validator",
-      "delegate": "https://testnet.itrocket.net/ojo/staking/ojovaloper1l0zkd0c52expz54khpkfe0pxl6u8jn0z7cvx80"
+      "delegate": "https://mekonglabs.tech/ojo/staking/ojovaloper1l0zkd0c52expz54khpkfe0pxl6u8jn0z7cvx80"
     },
     "opside": {
       "ecosystem": "false",
@@ -538,7 +538,7 @@
       "updHeight": "316000",
       "variable": "PRYZM",
       "newInstallBin": "cd $HOME\nwget https://storage.googleapis.com/pryzm-zone/core/0.10.0/pryzmd-0.10.0-linux-amd64.tar.gz\ntar -xzvf $HOME/pryzmd-0.10.0-linux-amd64.tar.gz\nsudo mv $HOME/pryzmd $(which pryzmd)",
-      "delegate": "https://testnet.itrocket.net/pryzm/staking/pryzmvaloper1g5l7ha0rng0s726y75l8mwqlqcgsg7nqn5ml5j",
+      "delegate": "https://mekonglabs.tech/pryzm/staking/pryzmvaloper1g5l7ha0rng0s726y75l8mwqlqcgsg7nqn5ml5j",
       "stateSync": "true"
     },
     "quicksilver": {
@@ -547,7 +547,7 @@
       "website": "https://quicksilver.zone/",
       "offValDoc": "https://github.com/ingenuity-build/testnets/tree/main/innuendo",
       "chainID": "rhye-2",
-      "delegate": "https://testnet.itrocket.net/quicksilver/staking/quickvaloper14tt8yda92r2j0umtqyrzlyywgg3y3ndtmtgh59",
+      "delegate": "https://mekonglabs.tech/quicksilver/staking/quickvaloper14tt8yda92r2j0umtqyrzlyywgg3y3ndtmtgh59",
       "desc": "Quicksilver is a permissionless, sovereign Cosmos SDK zone providing liquid staking for the entire Cosmos Ecosystem.",
       "hardware": "4 Cores, 16GB RAM, 500GB of storage (NVME)",
       "prHome": "/home/quick",
@@ -595,7 +595,7 @@
       "updHeight": "",
       "variable": "SOURCE",
       "newInstallBin": "",
-      "delegate": "https://testnet.itrocket.net/source/staking/sourcevaloper14cmh6n7gffgfepn6hka5zj7dvh5ghdrzc06s22"
+      "delegate": "https://mekonglabs.tech/source/staking/sourcevaloper14cmh6n7gffgfepn6hka5zj7dvh5ghdrzc06s22"
     },
     "structs": {
       "ecosystem": "cosmos",
@@ -610,7 +610,7 @@
       "chainID": "structstestnet-74",
       "denom": "alpha",
       "hardware": "4 Cores, 8GB RAM, 200GB of storage (NVME)",
-      "installBin": "cd $HOME\nwget -O $HOME/structsd https://testnet-files.itrocket.net/structs/structsd\nchmod +x $HOME/structsd\nmv $HOME/structsd $HOME/go/bin",
+      "installBin": "cd $HOME\nwget -O $HOME/structsd https://testnet-files.mekonglabs.tech/structs/structsd\nchmod +x $HOME/structsd\nmv $HOME/structsd $HOME/go/bin",
       "path": ".structs",
       "peerID": "268d132e1922cbfa86efac38aea07d1465b8728d",
       "peerPort": "28656",
@@ -622,7 +622,7 @@
       "updHeight": "",
       "variable": "STRUCTS",
       "newInstallBin": "",
-      "delegate": "https://testnet.itrocket.net/structs/staking/structsvaloper1jgyy6zdzx8rj579vejgw4x8h6vkj9nnr9egl8x"
+      "delegate": "https://mekonglabs.tech/structs/staking/structsvaloper1jgyy6zdzx8rj579vejgw4x8h6vkj9nnr9egl8x"
     },
     "taiko": {
       "explorer": "https://explorer.test.taiko.xyz/",
@@ -663,7 +663,7 @@
       "newInstallBin": "cd $HOME\nrm -rf $HOME/terp-core\ngit clone https://github.com/terpnetwork/terp-core.git\ncd terp-core\ngit checkout v4.1.testnet\nmake build\nsudo mv $HOME/terp-core/build/terpd $(which terpd)",
       "desc": "Decentralized Infrastructure for the Cannabis Community",
       "offValDoc": "https://github.com/terpnetwork/terp-core",
-      "delegate": "https://testnet.itrocket.net/terp/staking/terpvaloper1u9nx0mxq30h6dq99w6ptju09pz3m32jxz4672f"
+      "delegate": "https://mekonglabs.tech/terp/staking/terpvaloper1u9nx0mxq30h6dq99w6ptju09pz3m32jxz4672f"
     },
     "uptick": {
       "bin": "uptickd",
@@ -692,14 +692,14 @@
       "website": "https://uptick.network/",
       "desc": "The Business Grade Multi-Chain NFT Infrastructure for Web 3.0",
       "offValDoc": "https://docs.uptick.network/testnet/",
-      "delegate": "https://testnet.itrocket.net/uptick/staking/uptickvaloper1hdsu709g60g475ufnr0yklgtecs8xj0vm8rqh7",
+      "delegate": "https://mekonglabs.tech/uptick/staking/uptickvaloper1hdsu709g60g475ufnr0yklgtecs8xj0vm8rqh7",
       "fav": "true",
-      "evmRPC": "https://uptick-testnet-evm.itrocket.net:443",
+      "evmRPC": "https://uptick-testnet-evm.mekonglabs.tech:443",
       "newExecStart": "$(which uptickd) start --home $HOME/.uptickd --chain-id origin_1170-2"
     },
     "zetachain": {
       "chainID": "athens_7001-1",
-      "delegate": "https://testnet.itrocket.net/zetachain/staking/zetavaloper17d6ttmqffr5pwt9fd7uuj8px27quv4nljf3s8j",
+      "delegate": "https://mekonglabs.tech/zetachain/staking/zetavaloper17d6ttmqffr5pwt9fd7uuj8px27quv4nljf3s8j",
       "imgUrl": "zetachain.jpg",
       "website": "https://www.zetachain.com/",
       "offValDoc": "https://github.com/zeta-chain/network-athens3/tree/main",
@@ -717,7 +717,7 @@
       "peerID": "d21b103628b0d5d824bbe81b809d8dc457bd2059",
       "seedID": "c1bbbfe2a5b15674bf24a869b3e8189b6b410ae7",
       "peerPort": "16656",
-      "evmRPC": "https://zetachain-testnet-evm.itrocket.net:443",
+      "evmRPC": "https://zetachain-testnet-evm.mekonglabs.tech:443",
       "seedPort": "14656",
       "newExecStart": "$(which zetacored) start --home $HOME/.zetacored --log_format json  --log_level info --moniker $MONIKER",
       "installBin": "cd $HOME\nmkdir -p $HOME/.zetacored/config\ncd $HOME\nwget -O $HOME/zetacored https://github.com/zeta-chain/node/releases/download/v11.0.0/zetacored-linux-amd64\nchmod +x $HOME/zetacored \nmv $HOME/zetacored  $HOME/go/bin",

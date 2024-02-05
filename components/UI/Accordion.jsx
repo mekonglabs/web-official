@@ -54,15 +54,9 @@ const Accordion = () => {
 			title: 'About us',
 			content: (
 				<span>
-					ITRocket is a team of DevOps engineers and Software Developers from Armenia{' '}
-					<span
-						className='inline-block h-5 w-5 align-top mx-1 lg:mt-[2px]'
-						aria-hidden='true'
-						style={{ background: "center / contain url('/icons/flag_am.svg')  no-repeat" }}
-					></span>{' '}
+					MeKongLabs is a dedicated team specializing in blockchain validation and airdrop hunting based in Vietnam.
 					<br />
-					We are crypto enthusiasts and node operators in various crypto ecosystems. Our main goal is to help
-					millions of people effectively manage their crypto assets!
+					We take pride in having members who are skilled developers from leading technology companies in Vietnam, working together to shape and advance the local blockchain community.
 				</span>
 			)
 		},

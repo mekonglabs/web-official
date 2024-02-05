@@ -22,10 +22,10 @@ const CosmosAPI = ({ name, type }) => {
 
 	const { theme } = useContext(Context)
 
-	const PEERS = peerID ? `${peerID}@${name}-${type}-peer.itrocket.net:${peerPort}${livePeers}` : ''
+	const PEERS = peerID ? `${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}${livePeers}` : ''
 	const LIVE_PEERS = peerID ? `"${PEERS}"` : `"${livePeers.slice(1)}"`
-	const SEEDS = seedID ? `${seedID}@${name}-${type}-seed.itrocket.net:${seedPort}` : ''
-	const gRPC = `${name}-${type}-grpc.itrocket.net:${peerPort ? peerPort.slice(0, 2) : ''}090`
+	const SEEDS = seedID ? `${seedID}@${name}-${type}-seed.mekonglabs.tech:${seedPort}` : ''
+	const gRPC = `${name}-${type}-grpc.mekonglabs.tech:${peerPort ? peerPort.slice(0, 2) : ''}090`
 
 	const { snapHeight, snapSize, snapTime, pruning, indexer, wasmPath } = useFetchSnapInfo(name, type)
 
@@ -45,12 +45,12 @@ const CosmosAPI = ({ name, type }) => {
 				<div className='flex flex-col flex-wrap gap-1 mb-1'>
 					<div className='flex flex-wrap gap-1 items-center'>
 						<span>RPC: </span>
-						<a href={`https://${name}-${type}-rpc.itrocket.net`} target='_blank' rel='noopener referrer'>
-							{`https://${name}-${type}-rpc.itrocket.net`}
+						<a href={`https://${name}-${type}-rpc.mekonglabs.tech`} target='_blank' rel='noopener referrer'>
+							{`https://${name}-${type}-rpc.mekonglabs.tech`}
 						</a>
 						<Paragraph
 							copyable={{
-								text: `https://${name}-${type}-rpc.itrocket.net`,
+								text: `https://${name}-${type}-rpc.mekonglabs.tech`,
 								tooltips: false
 							}}
 						/>
@@ -62,15 +62,15 @@ const CosmosAPI = ({ name, type }) => {
 							<div className='flex flex-wrap gap-1 items-center'>
 								API:
 								<a
-									href={`https://${name}-${type}-api.itrocket.net`}
+									href={`https://${name}-${type}-api.mekonglabs.tech`}
 									target='_blank'
 									rel='noopener referrer'
 								>
-									{`https://${name}-${type}-api.itrocket.net`}
+									{`https://${name}-${type}-api.mekonglabs.tech`}
 								</a>
 								<Paragraph
 									copyable={{
-										text: `https://${name}-${type}-api.itrocket.net`,
+										text: `https://${name}-${type}-api.mekonglabs.tech`,
 										tooltips: false
 									}}
 								/>
@@ -101,7 +101,7 @@ const CosmosAPI = ({ name, type }) => {
 					</>
 				)}
 				<h3 id='peer'>peers:</h3>
-				<CodeSnippet theme={theme} code={`${peerID}@${name}-${type}-peer.itrocket.net:${peerPort}`} />
+				<CodeSnippet theme={theme} code={`${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}`} />
 				{SEEDS == '' ? (
 					''
 				) : (
@@ -121,7 +121,7 @@ sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/${path}/c
 				<p className={styles.text_secondary}>updates every hour</p>
 				<CodeSnippet
 					theme={theme}
-					code={`wget -O $HOME/${path}/config/addrbook.json https://${type}-files.itrocket.net/${name}/addrbook.json`}
+					code={`wget -O $HOME/${path}/config/addrbook.json https://${type}-files.mekonglabs.tech/${name}/addrbook.json`}
 				/>
 				<h2 id='snap'>Snapshot </h2>
 				{snapHeight == undefined ? (
@@ -145,7 +145,7 @@ sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/${path}/c
 cp $HOME/${path}/data/priv_validator_state.json $HOME/${path}/priv_validator_state.json.backup
 
 rm -rf $HOME/${path}/data ${wasmPath?.includes('data') || !wasmPath ? '' : `$HOME/${path}/wasmPath`}
-curl https://${type}-files.itrocket.net/${name}/snap_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${path}
+curl https://${type}-files.mekonglabs.tech/${name}/snap_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${path}
 
 mv $HOME/${path}/priv_validator_state.json.backup $HOME/${path}/data/priv_validator_state.json
 
@@ -168,8 +168,8 @@ sudo systemctl restart ${bin} && sudo journalctl -u ${bin} -f`}
 cp $HOME/${path}/data/priv_validator_state.json $HOME/${path}/priv_validator_state.json.backup
 ${bin} ${unsafeReset} --home $HOME/${path}
 
-peers="${peerID}@${name}-${type}-peer.itrocket.net:${peerPort}${livePeers}"  
-SNAP_RPC="https://${name}-${type}-rpc.itrocket.net:443"
+peers="${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}${livePeers}"  
+SNAP_RPC="https://${name}-${type}-rpc.mekonglabs.tech:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \\"$peers\\"/" $HOME/${path}/config/config.toml 
 
@@ -187,7 +187,7 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\\1\\"\\"|" $HOME/${path}/config/config.t
 ${
 	!wasmPath
 		? `
-curl https://${type}-files.itrocket.net/${name}/wasmPath_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${wasmPath}`
+curl https://${type}-files.mekonglabs.tech/${name}/wasmPath_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${wasmPath}`
 		: ``
 }
 mv $HOME/${path}/priv_validator_state.json.backup $HOME/${path}/data/priv_validator_state.json
@@ -202,7 +202,7 @@ sudo systemctl restart ${bin} && sudo journalctl -u ${bin} -f`}
 						<p className={styles.text_secondary}>updates every hour</p>
 						<CodeSnippet
 							theme={theme}
-							code={`curl https://${type}-files.itrocket.net/${name}/wasmPath_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${wasmPath} 
+							code={`curl https://${type}-files.mekonglabs.tech/${name}/wasmPath_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${wasmPath} 
 sudo systemctl restart ${bin} && sudo journalctl -u ${bin} -f`}
 						/>
 					</>

@@ -44,8 +44,8 @@ const Header = () => {
 					setIsOpen(!isOpen)
 				}}
 			>
-				<a href='https://mainnet.itrocket.net/'>Mainnet</a>
-				<a href='https://testnet.itrocket.net/'>Testnet</a>
+				<a href='https://mainnet.mekonglabs.tech/'>Mainnet</a>
+				<a href='https://mekonglabs.tech/'>Testnet</a>
 			</div>
 		</div>,
 		<Link

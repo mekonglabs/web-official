@@ -39,10 +39,10 @@ const CheatSheet = props => {
 	let PEERS = '""',
 		SEEDS = '""'
 	if (peerID) {
-		PEERS = `"${peerID}@${name}-${type}-peer.itrocket.net:${peerPort}${livePeers}"`
+		PEERS = `"${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}${livePeers}"`
 	}
 	if (seedID) {
-		SEEDS = `"${seedID}@${name}-${type}-seed.itrocket.net:${seedPort}"`
+		SEEDS = `"${seedID}@${name}-${type}-seed.mekonglabs.tech:${seedPort}"`
 	}
 
 	const onChange = e => {

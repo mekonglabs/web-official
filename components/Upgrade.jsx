@@ -23,8 +23,8 @@ const Upgrade = ({ name, type }) => {
 	const [upgradeID, setUpgradeID] = useState()
 
 	const fetchLastUpgradeId = async () => {
-		const baseUrl = `https://${name}-${type}-api.itrocket.net/cosmos/gov/v1`
-		const alternativeUrl = `https://${name}-${type}-api.itrocket.net/cosmos/gov/v1beta1`
+		const baseUrl = `https://${name}-${type}-api.mekonglabs.tech/cosmos/gov/v1`
+		const alternativeUrl = `https://${name}-${type}-api.mekonglabs.tech/cosmos/gov/v1beta1`
 
 		try {
 			let response = await tryFetch(baseUrl, 'v1')
@@ -54,7 +54,7 @@ const Upgrade = ({ name, type }) => {
 	}
 
 	const setFormattedUpgradeID = (id, version) => {
-		const formattedLink = `https://${name}-${type}-api.itrocket.net/cosmos/gov/${version}/proposals/${id}`
+		const formattedLink = `https://${name}-${type}-api.mekonglabs.tech/cosmos/gov/${version}/proposals/${id}`
 		setUpgradeID(() => formattedLink)
 	}
 

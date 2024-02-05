@@ -78,10 +78,10 @@ export default function handler(req, res) {
 	let PEERS = '""',
 		SEEDS = '""'
 	if (peerID) {
-		PEERS = `"${peerID}@${name}-${type}-peer.itrocket.net:${peerPort}${livePeers}"`
+		PEERS = `"${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}${livePeers}"`
 	}
 	if (seedID) {
-		SEEDS = `"${seedID}@${name}-${type}-seed.itrocket.net:${seedPort}"`
+		SEEDS = `"${seedID}@${name}-${type}-seed.mekonglabs.tech:${seedPort}"`
 	}
 
 	res.status(200).send(`#!/bin/bash
@@ -143,8 +143,8 @@ echo done
 
 printGreen "6. Downloading genesis and addrbook..." && sleep 1
 # download genesis and addrbook
-wget -O $HOME/${path}/config/genesis.json https://${type}-files.itrocket.net/${name}/genesis.json
-wget -O $HOME/${path}/config/addrbook.json https://${type}-files.itrocket.net/${name}/addrbook.json
+wget -O $HOME/${path}/config/genesis.json https://${type}-files.mekonglabs.tech/${name}/genesis.json
+wget -O $HOME/${path}/config/addrbook.json https://${type}-files.mekonglabs.tech/${name}/addrbook.json
 sleep 1
 echo done
 
@@ -203,8 +203,8 @@ EOF
 printGreen "8. Downloading snapshot and starting node..." && sleep 1
 # reset and download snapshot
 ${bin} ${unsafeReset} --home $HOME/${path}
-if curl -s --head curl https://${type}-files.itrocket.net/${name}/snap_${name}.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
-  curl https://${type}-files.itrocket.net/${name}/snap_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${path}
+if curl -s --head curl https://${type}-files.mekonglabs.tech/${name}/snap_${name}.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
+  curl https://${type}-files.mekonglabs.tech/${name}/snap_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${path}
     else
   echo no have snap
 fi

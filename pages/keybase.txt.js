@@ -5,7 +5,7 @@ https://keybase.io/itrocket_
 
 I hereby claim:
 
-  * I am an admin of https://itrocket.net
+  * I am an admin of https://mekonglabs.tech
   * I am itrocket_ (https://keybase.io/itrocket_) on keybase.
   * I have a public key ASCVTxFtfytJQrw2JnME40E-yt49NDAWbgp5LqCmIAzTxQo
 
@@ -28,7 +28,7 @@ To do so, I am signing this object:
     },
     "service": {
       "entropy": "hLEE7dK2JH6hBYJDPUwl6b4S",
-      "hostname": "itrocket.net",
+      "hostname": "mekonglabs.tech",
       "protocol": "https:"
     },
     "type": "web_service_binding",

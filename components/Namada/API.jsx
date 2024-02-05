@@ -24,10 +24,10 @@ const API = ({ name, type }) => {
 	const wasm = useRef('false')
 	const { theme } = useContext(Context)
 
-	const PEERS = peerID ? `tcp://${peerID}@${name}-${type}-peer.itrocket.net:${peerPort}${tcpLivePeers}` : ''
+	const PEERS = peerID ? `tcp://${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}${tcpLivePeers}` : ''
 	const LIVE_PEERS = peerID ? `"${PEERS}"` : `"${tcpLivePeers.slice(1)}"`
-	const SEEDS = seedID ? `${seedID}@${name}-${type}-seed.itrocket.net:${seedPort}` : ''
-	const gRPC = `${name}-${type}-grpc.itrocket.net:${peerPort ? peerPort.slice(0, 2) : ''}090`
+	const SEEDS = seedID ? `${seedID}@${name}-${type}-seed.mekonglabs.tech:${seedPort}` : ''
+	const gRPC = `${name}-${type}-grpc.mekonglabs.tech:${peerPort ? peerPort.slice(0, 2) : ''}090`
 
 	const { snapHeight, snapSize, snapTime } = useFetchSnapInfo(name, type)
 
@@ -47,12 +47,12 @@ const API = ({ name, type }) => {
 				<div className='flex flex-col flex-wrap gap-1 mb-1'>
 					<div className='flex flex-wrap gap-1 items-center'>
 						<span>Public RPC: </span>
-						<a href={`https://${name}-${type}-rpc.itrocket.net:443`} target='_blank' rel='noopener referrer'>
-							{`https://${name}-${type}-rpc.itrocket.net:443`}
+						<a href={`https://${name}-${type}-rpc.mekonglabs.tech:443`} target='_blank' rel='noopener referrer'>
+							{`https://${name}-${type}-rpc.mekonglabs.tech:443`}
 						</a>
 						<Paragraph
 							copyable={{
-								text: `https://${name}-${type}-rpc.itrocket.net:443`,
+								text: `https://${name}-${type}-rpc.mekonglabs.tech:443`,
 								tooltips: false
 							}}
 						/>
@@ -60,7 +60,7 @@ const API = ({ name, type }) => {
 				</div>
 
 				<h3 id='peer'>peers:</h3>
-				<CodeSnippet theme={theme} code={`${peerID}@${name}-${type}-peer.itrocket.net:${peerPort}`} />
+				<CodeSnippet theme={theme} code={`${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}`} />
 				{SEEDS == '' ? (
 					''
 				) : (
@@ -80,11 +80,11 @@ sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/${path}/c
 				<p className={styles.text_secondary}>updates every hour</p>
 				<CodeSnippet
 					theme={theme}
-					code={`wget -O $HOME/${path}/config/addrbook.json https://${type}-files.itrocket.net/${name}/addrbook.json`}
+					code={`wget -O $HOME/${path}/config/addrbook.json https://${type}-files.mekonglabs.tech/${name}/addrbook.json`}
 				/>
 				<h3 id='genesis'>genesis</h3>
 				<CodeSnippet
-					code={`wget -O $HOME/${path}/config/genesis.json https://testnet-files.itrocket.net/namada/genesis.json`}
+					code={`wget -O $HOME/${path}/config/genesis.json https://testnet-files.mekonglabs.tech/namada/genesis.json`}
 				/>
 
 				<h2 id='snap'>Snapshot </h2>
@@ -106,7 +106,7 @@ sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/${path}/c
 				<CodeBlock
 					desc='Download snapshot:'
 					code={`cd $HOME
-wget -O snap_namada.tar https://testnet-files.itrocket.net/namada/snap_namada.tar
+wget -O snap_namada.tar https://testnet-files.mekonglabs.tech/namada/snap_namada.tar
 `}
 				/>
 				<CodeBlock

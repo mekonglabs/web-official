@@ -23,7 +23,7 @@ export async function getServerSideProps(context) {
 	const projectName = context.params.projectName
 	const type = 'testnet'
 	try {
-		const response = await axios.get(`https://${type}-files.itrocket.net/${projectName}/.rpc_combined.json`)
+		const response = await axios.get(`https://${type}-files.mekonglabs.tech/${projectName}/.rpc_combined.json`)
 		return {
 			props: {
 				data: response.data,

@@ -14,7 +14,7 @@ const Card = ({ data, aprValues }) => {
 
 	const getExplorerLink = item => {
 		return data[item].explorer === '' || data[item].explorer === undefined
-			? `https://${type}.itrocket.net/${item.toLowerCase()}/staking`
+			? `https://${type}.mekonglabs.tech/${item.toLowerCase()}/staking`
 			: data[item].explorer
 	}
 

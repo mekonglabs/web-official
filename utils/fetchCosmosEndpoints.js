@@ -16,7 +16,7 @@ export const fetchAnnualProvisions = async name => {
 	} else {
 		try {
 			const res = await axios.get(
-				`https://${name}-mainnet-api.itrocket.net/cosmos/mint/v1beta1/annual_provisions`
+				`https://${name}-mainnet-api.mekonglabs.tech/cosmos/mint/v1beta1/annual_provisions`
 			)
 			return res?.data?.annual_provisions
 		} catch (err) {
@@ -28,7 +28,7 @@ export const fetchAnnualProvisions = async name => {
 export const fetchCommunityTax = async name => {
 	if (isNotCosmos(name)) return null
 	try {
-		const res = await axios.get(`https://${name}-mainnet-api.itrocket.net/cosmos/distribution/v1beta1/params`)
+		const res = await axios.get(`https://${name}-mainnet-api.mekonglabs.tech/cosmos/distribution/v1beta1/params`)
 		return res?.data?.params?.community_tax
 	} catch (err) {
 		return null
@@ -38,7 +38,7 @@ export const fetchCommunityTax = async name => {
 export const fetchBondedTokens = async name => {
 	if (isNotCosmos(name)) return null
 	try {
-		const res = await axios.get(`https://${name}-mainnet-api.itrocket.net/cosmos/staking/v1beta1/pool`)
+		const res = await axios.get(`https://${name}-mainnet-api.mekonglabs.tech/cosmos/staking/v1beta1/pool`)
 		return res?.data?.pool?.bonded_tokens
 	} catch (err) {
 		return null

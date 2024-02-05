@@ -2,7 +2,7 @@
 	"bin": "arkhd",
 	"binHome": "/home/arkhadian/go/bin/arkhd",
 	"chainID": "arkh",
-	"delegate": "https://mainnet.itrocket.net/arkhadian/staking/arkhvaloper18u4es3gnjerdqw3u96pjdq6ukclysh3f9wfmqe",
+	"delegate": "https://mainnet.mekonglabs.tech/arkhadian/staking/arkhvaloper18u4es3gnjerdqw3u96pjdq6ukclysh3f9wfmqe",
 	"denom": "arkh",
 	"ecosystem": "cosmos",
 	"gas": "--gas auto --gas-adjustment 1.5",

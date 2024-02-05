@@ -63,10 +63,10 @@ const Installation = props => {
 	let PEERS = '""',
 		SEEDS = '""'
 	if (peerID) {
-		PEERS = `"${peerID}@${name}-${type}-peer.itrocket.net:${peerPort}${livePeers}"`
+		PEERS = `"${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}${livePeers}"`
 	}
 	if (seedID) {
-		SEEDS = `"${seedID}@${name}-${type}-seed.itrocket.net:${seedPort}"`
+		SEEDS = `"${seedID}@${name}-${type}-seed.mekonglabs.tech:${seedPort}"`
 	}
 
 	const { pruning, indexer } = useFetchSnapInfo(name, type)
@@ -199,8 +199,8 @@ ${bin} config chain-id ${chainID}
 ${init}
 
 # download genesis and addrbook
-wget -O $HOME/${path}/config/genesis.json https://${type}-files.itrocket.net/${name}/genesis.json
-wget -O $HOME/${path}/config/addrbook.json https://${type}-files.itrocket.net/${name}/addrbook.json
+wget -O $HOME/${path}/config/genesis.json https://${type}-files.mekonglabs.tech/${name}/genesis.json
+wget -O $HOME/${path}/config/addrbook.json https://${type}-files.mekonglabs.tech/${name}/addrbook.json
 
 # set seeds and peers
 SEEDS=${SEEDS}
@@ -252,8 +252,8 @@ EOF
 
 # reset and download snapshot
 ${bin} ${unsafeReset} --home $HOME/${path}
-if curl -s --head curl https://${type}-files.itrocket.net/${name}/snap_${name}.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
-  curl https://${type}-files.itrocket.net/${name}/snap_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${path}
+if curl -s --head curl https://${type}-files.mekonglabs.tech/${name}/snap_${name}.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
+  curl https://${type}-files.mekonglabs.tech/${name}/snap_${name}.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/${path}
     else
   echo no have snap
 fi
@@ -271,7 +271,7 @@ sudo systemctl restart ${bin} && sudo journalctl -u ${bin} -f`}
 				</p>
 				<CodeSnippet
 					theme={theme}
-					code={`source <(curl -s https://itrocket.net/api/${type}/${name}/autoinstall/)`}
+					code={`source <(curl -s https://mekonglabs.tech/api/${type}/${name}/autoinstall/)`}
 				/>
 				<h2 id='create-wallet'>Create wallet</h2>
 				<CodeSnippet

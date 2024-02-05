@@ -136,7 +136,7 @@ export default function Dashboard(props) {
 								{explorer === undefined ? (
 									<a
 										className='flex items-center gap-2 font-medium text-blue-500 transition-colors hover:text-blue-400'
-										href={`https://${currentProject().type}.itrocket.net/${name}/staking`}
+										href={`https://${currentProject().type}.mekonglabs.tech/${name}/staking`}
 										target='_blank'
 										rel='noopener referrer'
 									>

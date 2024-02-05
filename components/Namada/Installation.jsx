@@ -63,10 +63,10 @@ const Installation = props => {
 	let PEERS = '""',
 		SEEDS = '""'
 	if (peerID) {
-		PEERS = `"${peerID}@${name}-${type}-peer.itrocket.net:${peerPort}${livePeers}"`
+		PEERS = `"${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}${livePeers}"`
 	}
 	if (seedID) {
-		SEEDS = `"${seedID}@${name}-${type}-seed.itrocket.net:${seedPort}"`
+		SEEDS = `"${seedID}@${name}-${type}-seed.mekonglabs.tech:${seedPort}"`
 	}
 
 	const { pruning, indexer } = useFetchSnapInfo(name, type)
@@ -377,7 +377,7 @@ sudo systemctl restart namadad && sudo journalctl -u namadad -f`}
 					]}
 				/>
 				<h2 id='auto-installation'>Automatic Installation</h2>
-				<CodeSnippet theme={theme} code={`source <(curl -s https://itrocket.net/api/namada/autoinstall/)`} />
+				<CodeSnippet theme={theme} code={`source <(curl -s https://mekonglabs.tech/api/namada/autoinstall/)`} />
 				<h2 id='security'>Security</h2>
 				<p>To protect you keys please don`t share your privkey, mnemonic and follow a basic security rules</p>
 				<h3 id='ssh' className='font-semibold'>

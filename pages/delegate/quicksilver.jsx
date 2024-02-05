@@ -35,16 +35,16 @@ const about = () => {
 					property='og:description'
 					content='ITRocket 🚀 | Crypto Multipurpose Project'
 				/>
-				<meta property='og:image' content='https://itrocket.net/logo.jpg' />
+				<meta property='og:image' content='https://mekonglabs.tech/logo.jpg' />
 				<meta property='og:type' content='article' />
 				<meta
 					property='og:url'
-					content='https://itrocket.net/support/mainnet/quicksilver/'
+					content='https://mekonglabs.tech/support/mainnet/quicksilver/'
 				/>
 				<meta property='twitter:card' content='summary_large_image' />
 				<meta
 					property='twitter:url'
-					content='https://itrocket.net/support/mainnet/quicksilver/'
+					content='https://mekonglabs.tech/support/mainnet/quicksilver/'
 				/>
 				<meta property='twitter:title' content='Projects Support - ITRocket' />
 				<meta
@@ -53,7 +53,7 @@ const about = () => {
 				/>
 				<meta
 					property='twitter:image'
-					content='https://itrocket.net/logo.jpg'
+					content='https://mekonglabs.tech/logo.jpg'
 				/> */}
 			</Head>
 
@@ -74,8 +74,8 @@ const about = () => {
 						</Paragraph>
 						<Paragraph>
 							<Text>Explorer: </Text>
-							<Link href='https://mainnet.itrocket.net/quicksilver/staking/quickvaloper1jlh8cttv96kyxu0j0r2ppv4sga6ju4uzxa3c2x'>
-								https://mainnet.itrocket.net/quicksilver/staking/quickvaloper1jlh8cttv96kyxu0j0r2ppv4sga6ju4uzxa3c2x
+							<Link href='https://mainnet.mekonglabs.tech/quicksilver/staking/quickvaloper1jlh8cttv96kyxu0j0r2ppv4sga6ju4uzxa3c2x'>
+								https://mainnet.mekonglabs.tech/quicksilver/staking/quickvaloper1jlh8cttv96kyxu0j0r2ppv4sga6ju4uzxa3c2x
 							</Link>
 						</Paragraph>
 						<Title level={2}>Guideline</Title>
@@ -89,7 +89,7 @@ const about = () => {
 								</li>
 								<li>
 									<Text>Go to the </Text>
-									<Link href='https://mainnet.itrocket.net/quicksilver/staking/quickvaloper1jlh8cttv96kyxu0j0r2ppv4sga6ju4uzxa3c2x'>
+									<Link href='https://mainnet.mekonglabs.tech/quicksilver/staking/quickvaloper1jlh8cttv96kyxu0j0r2ppv4sga6ju4uzxa3c2x'>
 										staking portal
 									</Link>
 									<Text> and connect your wallet</Text>
@@ -155,7 +155,7 @@ const about = () => {
 						<br />
 						<Paragraph>
 							<Text>Now you need to return to the </Text>
-							<Link href='https://mainnet.itrocket.net/quicksilver/staking/quickvaloper1jlh8cttv96kyxu0j0r2ppv4sga6ju4uzxa3c2x'>
+							<Link href='https://mainnet.mekonglabs.tech/quicksilver/staking/quickvaloper1jlh8cttv96kyxu0j0r2ppv4sga6ju4uzxa3c2x'>
 								portal page
 							</Link>
 							<Text> and try to delegate</Text>

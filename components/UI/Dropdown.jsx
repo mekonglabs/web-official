@@ -35,7 +35,7 @@ const Dropdown = props => {
 					<a
 						target='_blank'
 						rel='noopener noreferrer'
-						href='https://mainnet.itrocket.net/'
+						href='https://mainnet.mekonglabs.tech/'
 						className={styles.navItem}
 					>
 						Mainnet
@@ -51,7 +51,7 @@ const Dropdown = props => {
 					<a
 						target='_blank'
 						rel='noopener noreferrer'
-						href='https://testnet.itrocket.net/'
+						href='https://mekonglabs.tech/'
 						className={styles.navItem}
 					>
 						Testnet
