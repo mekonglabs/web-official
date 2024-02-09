@@ -43,49 +43,36 @@ const API = ({ name, type }) => {
 				id='mainColumn'
 				style={{ backgroundColor: theme === 'light' ? '#fff' : '#1b1b1b' }}
 			>
-				<h2 id='rpc'>RPC, Peers, Seed, Addrbook, Genesis</h2>
+				<h2 id='rpc'>RPC, Indexer</h2>
 				<div className='flex flex-col flex-wrap gap-1 mb-1'>
 					<div className='flex flex-wrap gap-1 items-center'>
 						<span>Public RPC: </span>
-						<a href={`https://${name}-${type}-rpc.mekonglabs.tech:443`} target='_blank' rel='noopener referrer'>
-							{`https://${name}-${type}-rpc.mekonglabs.tech:443`}
+						<a href={`https://rpc-namada.mekonglabs.tech`} target='_blank' rel='noopener referrer'>
+							{`https://rpc-namada.mekonglabs.tech`}
 						</a>
 						<Paragraph
 							copyable={{
-								text: `https://${name}-${type}-rpc.mekonglabs.tech:443`,
+								text: `https://rpc-namada.mekonglabs.tech`,
 								tooltips: false
 							}}
 						/>
 					</div>
 				</div>
 
-				<h3 id='peer'>peers:</h3>
-				<CodeSnippet theme={theme} code={`${peerID}@${name}-${type}-peer.mekonglabs.tech:${peerPort}`} />
-				{SEEDS == '' ? (
-					''
-				) : (
-					<div>
-						<h3 id='seed'>seed:</h3>
-						<CodeSnippet theme={theme} code={SEEDS} />
+				<div className='flex flex-col flex-wrap gap-1 mb-1'>
+					<div className='flex flex-wrap gap-1 items-center'>
+						<span>Public Indexer: </span>
+						<a href={`https://namadexer.mekonglabs.tech`} target='_blank' rel='noopener referrer'>
+							{`https://namadexer.mekonglabs.tech`}
+						</a>
+						<Paragraph
+							copyable={{
+								text: `https://namadexer.mekonglabs.tech`,
+								tooltips: false
+							}}
+						/>
 					</div>
-				)}
-				<h3 id='live-peers'>live peers:</h3>
-				<p className={styles.text_secondary}>active peers: {livePeersCounter} (upd. every 10 sec)</p>
-				<CodeSnippet
-					theme={theme}
-					code={`PEERS=${LIVE_PEERS}
-sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/${path}/config/config.toml`}
-				/>
-				<h3 id='addrbook'>addrbook:</h3>
-				<p className={styles.text_secondary}>updates every hour</p>
-				<CodeSnippet
-					theme={theme}
-					code={`wget -O $HOME/${path}/config/addrbook.json https://${type}-files.mekonglabs.tech/${name}/addrbook.json`}
-				/>
-				<h3 id='genesis'>genesis</h3>
-				<CodeSnippet
-					code={`wget -O $HOME/${path}/config/genesis.json https://testnet-files.mekonglabs.tech/namada/genesis.json`}
-				/>
+				</div>
 
 				<h2 id='snap'>Snapshot </h2>
 				{snapHeight == undefined ? (
