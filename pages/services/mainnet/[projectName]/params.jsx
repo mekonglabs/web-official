@@ -8,7 +8,7 @@ const ParamsPage = ({ paramsData }) => {
 	return (
 		<>
 			<Params paramsData={paramsData} />
-			{paramsData && <a href={`https://t.me/itrocket_${type}_proposal_bot`}>Go to Telegram Bot</a>}
+			{paramsData && <a href={`https://t.me/mekong_labs`}>Go to Telegram Bot</a>}
 		</>
 	)
 }

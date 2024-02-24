@@ -52,7 +52,7 @@ const Footer = props => {
 					<span className='text-slate-600'>© MeKong Labs. All rights reserved</span>
 				</div>
 				<div className='socials'>
-					<a href='https://t.me/+AdXdDTzcbgY4YThl' target='_blank' rel='noopener noreferrer'>
+					<a href='https://t.me/mekong_labs' target='_blank' rel='noopener noreferrer'>
 						<Image src='/icons/tg.svg' alt='telegram' width={40} height={40} />
 					</a>
 

@@ -690,7 +690,7 @@ const SideMenu = () => {
 							<div className='mb-2'>
 								<a
 									className='font-normal text-sm dark:text-[#a7a7a7]'
-									href={`https://t.me/itrocket_${type}_proposal_bot`}
+									href={`https://t.me/mekong_labs`}
 									target='_blank'
 									rel='noopener noreferrer'
 								>
